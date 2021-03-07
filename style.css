@@ -89,13 +89,69 @@ Main Body Layout
 ========================================================================== 
 */
 
-/* main {
+main {
     grid-area: main;
+    display: grid;
+    grid-template: 
+    "one one one three" 1fr
+    "two two two three" 1fr
+    "four four four three" 1fr 
+    / 1fr 1fr 1fr 2fr;
+}
+
+main button {
+    margin-left: 50%;
+    margin-top: 2rem;
+    background-color: black;
     color: white;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-} */
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    box-shadow: 0 0.3rem rgba(100, 100, 100, 0.5);
+}
+
+main button:hover {
+    filter: brightness(115%);
+}
+
+main button:active {
+        transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(100, 100, 100, 0.5);
+}
+
+/* Button One */
+section.js-experiment {
+    grid-area: one;
+    border: 2px solid red;
+}
+
+.js-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    box-shadow: 0 0.3rem rgba(100, 100, 100, 0.5);
+}
+
+/* Button Two */
+section.js-experiment-two {
+    grid-area: two;
+    border: 2px solid red;
+}
+
+/* Button Three */
+section.js-experiment-three {
+    grid-area: three;
+    border: 2px solid red;
+}
+
+/* Button Four */
+section.js-experiment-four {
+    grid-area: four;
+    border: 2px solid red;
+}
+
 
 
 /* 
